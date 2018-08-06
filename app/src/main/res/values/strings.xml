@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">VideoGameManager</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="collections_fanart">Fan Art</string>
+    <string name="collections_boxart">Box Art</string>
+    <string name="collections_screens">Screenshots</string>
+
+    <string name="personal_goals">Goals</string>
+    <string name="personal_challenges">Challenges</string>
+    <string name="personal_scores">High Scores</string>
+    <string name="personal_timers">Times</string>
+
+    <string name="search_error">Sorry, could not find any game matching your search.</string>
+    <string name="facebook_app_id">628706237265319</string>
+
+
+    <string name="share_title">Complete!</string>
+    <string name="share_goal">I just finished this goal!</string>
+    <string name="share_challenge">I just finished this challenge!</string>
+    <string name="share_score">I just set a new high score!</string>
+    <string name="share_timer">I just set a new record!</string>
+
+    <string name="share_dialog_title">Would you like to share your acomplishment?</string>
+    <string name="share_dialog_button_text">Close</string>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Social"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/social_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook Sharing"
+        android:textSize="15dp"
+        android:layout_below="@+id/social_text"
+        android:id="@+id/settings_fb_share_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_fb_share_switch"
+        android:layout_below="@+id/social_text"
+        android:layout_toRightOf="@+id/settings_fb_share_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitter Sharing"
+        android:textSize="15dp"
+        android:layout_below="@+id/settings_fb_share_text"
+        android:id="@+id/settings_twitter_share_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_twitter_share_switch"
+        android:layout_below="@+id/settings_fb_share_text"
+        android:layout_toRightOf="@+id/settings_twitter_share_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Settings"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/app_settings_text"
+        android:layout_below="@+id/settings_twitter_share_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wishlist Notifications"
+        android:textSize="15dp"
+        android:layout_below="@+id/app_settings_text"
+        android:id="@+id/settings_whishlist_notification_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_wishlist_notification_switch"
+        android:layout_below="@+id/app_settings_text"
+        android:layout_toRightOf="@+id/settings_whishlist_notification_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:checked="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backlog Notifications"
+        android:textSize="15dp"
+        android:layout_below="@+id/settings_whishlist_notification_text"
+        android:id="@+id/settings_backlog_notification_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_backlog_notification_switch"
+        android:layout_below="@+id/settings_whishlist_notification_text"
+        android:layout_toRightOf="@+id/settings_backlog_notification_text"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:checked="true" />
+    </RelativeLayout>
+</ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/settings_save_button"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:id="@+id/settings_close_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/settings_save_button"
+        />
+
+</RelativeLayout>

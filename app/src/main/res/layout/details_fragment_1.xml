@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:id="@+id/details_parent_view">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_game_main"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:id="@+id/details_cover"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_name"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_release_date"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_platform"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_add_myGames"
+                    android:drawableTop="@drawable/ic_add_mygame"
+                    android:gravity="center"
+                    android:textOff=""
+                    android:textOn=""
+                    android:textSize="0dp" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_add_wishlist"
+                    android:drawableTop="@drawable/ic_add_mygame"
+                    android:gravity="center"
+                    android:textOff=""
+                    android:textOn=""
+                    android:textSize="0dp" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_add_backlog"
+                    android:drawableTop="@drawable/ic_add_mygame"
+                    android:gravity="center"
+                    android:textOff=""
+                    android:textOn=""
+                    android:textSize="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Details"
+        android:textOn="Personal"
+        android:id="@+id/details_switch"
+        android:layout_below="@+id/details_game_main"
+        android:gravity="center|center_vertical|center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_below="@+id/details_switch">
+        <fragment
+            android:name="com.vgmanager.placeholder.PlaceHolderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/details_fragment_switch" />
+
+    </RelativeLayout>
+</RelativeLayout>
